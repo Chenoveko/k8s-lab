@@ -8,3 +8,4 @@ kubectl run alpine --image=alpine --restart=Never --rm -it -- /bin/sh
 kubectl run alpine --image=alpine --restart=Never --env=MY_VARIABLE="Hello, Kubernetes!" --rm -it -- /bin/sh
 ## Delete pod
 kubectl delete pod alpine
+## Aliases for pods -> po, pod and pods 

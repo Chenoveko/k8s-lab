@@ -1,0 +1,21 @@
+# helm install homarr homarr-labs/homarr --namespace homarr --create-namespace --values values.yaml
+# Default values for homarr -> https://github.com/homarr-labs/charts/blob/dev/charts/homarr/values.yaml
+
+replicaCount: 1
+
+env:
+  TZ: "Europe/Madrid"
+  SECRET_ENCRYPTION_KEY: "597171fe5103489b52ce71936728cc395267839b4d5d7b4b7b486d8ce31d295a"
+
+persistence:
+  homarrDatabase:
+    enabled: true
+    storageClassName: "local-path"
+    size: "1Gi"
+
+service:
+  enabled: true
+  type: LoadBalancer
+
+podLabels:
+  hello: world

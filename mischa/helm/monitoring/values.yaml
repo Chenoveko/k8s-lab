@@ -1,0 +1,3 @@
+grafana:
+  defaultDashboardsTimezone: Europe/Madrid
+  adminPassword: admin

@@ -8,6 +8,7 @@ alias kgd='kubectl get deploy'
 alias kgp='k get pods'
 alias kgr='kubectl get replicasets'
 alias kgn="kubectl get namespaces"
+alias kgs="kubectl get services"
 # kubectl create
 alias kcn="kubectl create namespace"
 alias kcd="kubectl create deploy"
